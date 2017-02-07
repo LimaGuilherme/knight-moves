@@ -1,0 +1,9 @@
+before_script:
+- pip install -r requirements.txt
+
+Build:
+ script:
+   - nosetests
+PEP8:
+ script:
+   - pep8 --show-source --show-pep8 tests --ignore=E501,E40
